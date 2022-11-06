@@ -21,7 +21,7 @@ where $A\in \mathbb{Z}_q^{m\times n}$ for prime $q$ and error $e\in \mathbb{Z}_q
 
 ## Methods tried:
 
-1. A simple iterative scoring based method to get an idea of how many iterations to run. Errors drawn from a discrete gaussian are added to $b$ to give $b'$ and the equation $Ax = b'$ is solved using least-squares. Each time specific entries of $x$ are 0 or 1, their respective scores are incremented at after some iterations, a "solution" consisting of entries with the highest score between 0 and 1 is tested against the actual secret $S$
+1. A simple iterative scoring based method to get an idea of how many iterations to run. Errors drawn from a discrete gaussian are added to $b$ to give $b'$ and the equation $Ax = b'$ is solved using least-squares. Each time specific entries of $x$ are 0 or 1, their respective scores are incremented at after some iterations, a "solution" consisting of entries with the highest score between 0 and 1 is tested against the actual secret $S$.
 2. Finding matrices $x_i$ s.t. $A^T \times x_i = u_i$, where $x_i$ has a "small enough" norm. This can be used as follows, and if $e^T \times x_i$ is small enough, we could estimate $S^T_i$ by seeing if the result of $b^T \times x_i$ is closer to 0 or 1.
 $$
 \begin{align*}
