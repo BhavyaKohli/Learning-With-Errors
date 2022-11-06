@@ -31,6 +31,6 @@ b^T \times x_i &= S^T \times u_i + e^T \times x_i \\
 b^T \times x_i &= S^T_i + e^T \times x_i \\
 \end{align*}
 $$
-2. (contd)<br>**Problem**: norms of $e^T \times x_i$ are close to 1, and since $S^T_i$ is a binary value, it is too high..<br>**Idea**: Any way of using pdf of $e$ (gaussian) to find error probability or make guesses based on output?
+2. (contd)<br>**Problem**: norms of $e^T \times x_i$ are close to 1 for higher values of sigma, and since $S^T_i$ is a binary value, it is too high..<br>**Idea**: Any way of using pdf of $e$ (gaussian) to find error probability or make guesses based on output?
 3. Finding $x_i$ s.t. $A^T \times x_i = u_i+u_{i+1}$, therefore we will get $S^T_i + S^T_{i+1}$ instead of just $S^T_i$. Norms are lesser (per value, if that has any effect), experiments underway...
 4. 
